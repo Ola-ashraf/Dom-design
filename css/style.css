@@ -1,0 +1,43 @@
+
+.item{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.layer{
+    position: absolute;
+    left: 15px;
+    bottom: -50%;
+    right: 15px;
+    background-color: #fff;
+    text-align: center;
+    transition: bottom 1s;
+}
+
+
+.item:hover .layer{
+    bottom: 15px;
+}
+
+#boxContainer{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.354);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.inerrBox{
+    width: 50%;
+    height: 400px;
+    background-image: url(../img/portfolio-1.jpg);
+    background-size: cover;
+}
+
+.inerrBox i {
+    cursor: pointer;
+}
